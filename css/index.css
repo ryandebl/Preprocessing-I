@@ -126,6 +126,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.box-spacing {
+  margin: 1%;
+  padding: 2%;
+}
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
@@ -178,12 +182,17 @@ img {
   margin: 2%;
   padding: 4%;
 }
+.skills-section li {
+  font-size: 1em;
+}
 .skills-section .left-skills {
-  border: solid black;
+  margin: 1%;
+  padding: 2%;
 }
 .skills-section .right-skills {
-  border: solid black;
-  width: 40%;
+  width: 35%;
+  margin: 1%;
+  padding: 2%;
 }
 .skills-section h3 {
   font-size: 1.8rem;
@@ -191,6 +200,6 @@ img {
   text-decoration: underline;
   margin-bottom: 10px;
 }
-.right-skills {
-  margin: 5%;
+.work-history {
+  background-color: #9FEBA8;
 }
