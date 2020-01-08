@@ -130,6 +130,10 @@ table {
   margin: 1%;
   padding: 2%;
 }
+.center-items {
+  justify-content: center;
+  align-items: center;
+}
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
@@ -174,6 +178,11 @@ img {
   height: 500px;
   margin: 2%;
 }
+@media (max-width 500px) {
+  .family-photo {
+    display: none;
+  }
+}
 .skills-section {
   display: flex;
   justify-content: center;
@@ -181,9 +190,6 @@ img {
   color: #6193E8;
   margin: 2%;
   padding: 4%;
-}
-.skills-section li {
-  font-size: 1em;
 }
 .skills-section .left-skills {
   margin: 1%;
@@ -200,6 +206,31 @@ img {
   text-decoration: underline;
   margin-bottom: 10px;
 }
+a:hover {
+  color: #9FEBA8;
+}
+h3 {
+  font-size: 1.8rem;
+  color: #6193E8;
+  text-decoration: underline;
+  text-align: center;
+  padding-bottom: 20px;
+}
 .work-history {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #9FEBA8;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.work-history h2 {
+  font-size: 1.4rem;
+  color: #6193E8;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+.contact {
+  color: #6193E8;
+  text-align: center;
 }

@@ -53,6 +53,11 @@ table {
 	padding: 2%;
 }
 
+.center-items {
+	justify-content: center;
+	align-items: center;
+}
+
 @background-color: #9FEBA8;
 
 @text-color: #6193E8;
@@ -74,8 +79,7 @@ header {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	margin: 1%;
-	padding: 2%;
+	.box-spacing();
 
 	@media ( max-width: 500px ) {
 		flex-direction: column;
@@ -110,19 +114,26 @@ header {
 img {
 	height: 500px;
 	margin: 2%;
+	
+}
+
+.family-photo {
+	@media (max-width 500px) {
+		display: none;
+	}
+		
 }
 
 .skills-section {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	.center-items();
 	color: @text-color;
 	margin:2%;
 	padding: 4%;
 
-	li {
-		font-size: 
-	}
+	// li {
+	// 	font-size: 
+	// }
 
 	.left-skills {
 		// border: solid black;
@@ -149,6 +160,32 @@ a:hover {
 	color: @background-color;
 }
 
-.work-history {
-	background-color: @background-color;
+h3 {
+	font-size: 1.8rem;
+	color: @text-color;
+	text-decoration: underline;
+	text-align: center;
+	padding-bottom: 20px;
+	// background-color: @background-color;
 }
+
+.work-history {
+	display: flex;
+	.center-items();
+	background-color: @background-color;	
+	text-align: center;
+	padding-bottom: 30px;
+
+	h2 {
+		font-size: 1.4rem;
+		color: @text-color;	
+		text-decoration: underline;
+		margin-bottom: 10px;	
+	}
+}
+
+.contact {
+	color: @text-color;
+	text-align: center;
+}
+
