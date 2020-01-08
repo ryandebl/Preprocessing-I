@@ -99,7 +99,10 @@ header {
 	padding: 10vh;
 	width: 50%;
 	align-content: center;
-
+	
+	
+		
+	
 	h1 {
 		font-size: 3rem;
 		color: @text-color;	
@@ -113,16 +116,11 @@ header {
 
 img {
 	height: 500px;
-	margin: 2%;
-	
-}
-
-.family-photo {
-	@media (max-width 500px) {
-		display: none;
+	margin: 2%;		
 	}
+
 		
-}
+
 
 .skills-section {
 	display: flex;
@@ -131,17 +129,16 @@ img {
 	margin:2%;
 	padding: 4%;
 
-	// li {
-	// 	font-size: 
-	// }
+	@media ( max-width: 500px ) {
+		flex-direction: column;
+	}
 
-	.left-skills {
-		// border: solid black;
+	
+	.left-skills {		
 		.box-spacing();
 	}
 
-	.right-skills {
-		// border: solid black;
+	.right-skills {		
 		width: 35%;
 		.box-spacing();
 	}
@@ -172,9 +169,12 @@ h3 {
 .work-history {
 	display: flex;
 	.center-items();
+	color: @text-color;
 	background-color: @background-color;	
 	text-align: center;
 	padding-bottom: 30px;
+	
+	
 
 	h2 {
 		font-size: 1.4rem;

@@ -178,11 +178,6 @@ img {
   height: 500px;
   margin: 2%;
 }
-@media (max-width 500px) {
-  .family-photo {
-    display: none;
-  }
-}
 .skills-section {
   display: flex;
   justify-content: center;
@@ -190,6 +185,11 @@ img {
   color: #6193E8;
   margin: 2%;
   padding: 4%;
+}
+@media (max-width: 500px) {
+  .skills-section {
+    flex-direction: column;
+  }
 }
 .skills-section .left-skills {
   margin: 1%;
@@ -220,6 +220,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #6193E8;
   background-color: #9FEBA8;
   text-align: center;
   padding-bottom: 30px;
